@@ -863,7 +863,7 @@
      */
     _renderObjects: function(ctx, objects) {
       for (var i = 0, length = objects.length; i < length; ++i) {
-        objects[i] && objects[i].render(ctx);
+        objects[i] && objects[i].render && objects[i].render(ctx);
       }
     },
 
